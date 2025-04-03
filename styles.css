@@ -1,0 +1,90 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff; /* Azul claro como fondo */
+    color: #003366; /* Azul oscuro para el texto */
+}
+
+header {
+    background-color: #00509e; /* Azul vivo para la barra de navegación */
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #ffcc00; /* Amarillo cálido para hover */
+}
+
+section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de perfil centrada y circular */
+.perfil {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #00509e; /* Marco azul alrededor de la imagen */
+}
+
+/* Botón Modo Oscuro */
+button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffcc00;
+    color: #003366;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffd633; /* Amarillo más claro */
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #003366; /* Azul oscuro para el fondo */
+    color: #e6f7ff; /* Azul claro para el texto */
+}
+
+body.dark-mode header {
+    background-color: #002147; /* Azul profundo para la barra de navegación */
+}
+
+body.dark-mode section {
+    background-color: #00509e; /* Azul medio */
+    color: #ffffff;
+}
+
+body.dark-mode button {
+    background-color: #ffffff;
+    color: #003366;
+}

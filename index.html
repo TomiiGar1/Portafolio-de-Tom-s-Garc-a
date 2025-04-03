@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio web de Tomás García">
+    <meta name="keywords" content="Portafolio, web, informática, diseño, Contacto">
+    <meta name="author" content="Tomás García">
+    <meta property="og:title" content="Portafolio de Tomás García"> 
+    <meta property="og:description" content="Conoce mis estudios, experiencia y proyectos en informática y diseño">
+    <meta property="og:image" content="./Assets/perfil.jpg">
+    <title>Portafolio web | Tomás García</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sobremi.css">
+    <link rel="stylesheet" href="experiencias.css">
+    <link rel="stylesheet" href="estudios.css">
+    <link rel="stylesheet" href="proyectos.css">
+</head>
+<body>
+    <header>
+        <h1>Tomás García</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#experiencias">Experiencia</a></li>
+                <li><a href="#estudios">Mis estudios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main class="main-container">
+        <section id="sobremi" class="sobremi">
+            <main>
+                <section id="sobremi">
+                    <img src="tomi.jpeg" alt="Foto de Tomás García" class="perfil">
+                    <p>Conoce mis estudios, experiencia y proyectos en informática</p>
+                </section>
+            </main>
+        </section>
+        <section id="experiencias" class="experiencias">
+            <article class="container-experiencias">
+                <h2>Experiencia</h2>
+                <h3>Escolar</h3>
+                <ul>
+                    <li>Durante mi formación, he adquirido experiencia en diversas áreas tecnológicas y creativas. He trabajado en proyectos de diseño gráfico, empleando herramientas avanzadas para crear contenido visual atractivo y funcional. También he explorado el desarrollo web, integrando estética y funcionalidad en cada página diseñada.
+
+                        Mi interés por la tecnología me ha llevado a experimentar con la electrónica y la automatización, utilizando plataformas como Arduino para desarrollar soluciones innovadoras. Además, he profundizado en el estudio del hardware y su funcionamiento, lo que me ha permitido comprender mejor los sistemas informáticos.
+                        
+                        En el ámbito de la programación, he aplicado diversos lenguajes para resolver problemas y desarrollar proyectos, siempre buscando optimizar el resultado y potenciar la lógica computacional. Esta combinación de habilidades me ha permitido abordar desafíos desde una perspectiva integral y creativa.</li>
+                </ul>
+            </article>
+        </section>
+        <section id="estudios" class="estudios">
+            <article class="container-estudios">
+                <h2>Mis estudios</h2>
+                <h3>Instituto de Enseñanza Privada El Obraje</h3>
+                <h4>2019 - 2025</h4>
+                <div class="container-estudios-section">
+                    <img src="obr.jpg" alt="Logo del Obraje" width="100" height="100">
+                    <p>Actualmente curso séptimo año en el Instituto de Enseñanza Privada El Obraje, en la especialidad de informática.</p>
+                </div>
+                <h3>Escuela Primaria: San Martin</h3>
+                <h4>2012 - 2018</h4>
+                <img src="sm.jpg" alt="logosanmartin" width="100" height="100">
+                <p>Realicé mi educación primaria en la Escuela Primaria San Martin.</p>
+            </article>
+        </section>
+        <section id="proyectos" class="proyectos">
+            <h2>Proyectos</h2>
+            <div class="galeria-proyectos">
+                <div class="proyecto">
+                    <h3>Proyecto 1</h3>
+                    <p>Simulación de PYME: Schiapparelli´s Pizza</p>
+                    <p>Detalles: En este proyecto desarrollamos una pyme desde cero</p>
+                </div>
+                <div class="proyecto">
+                    <h3>Proyecto 2</h3>
+                    <p>Creación de Sistema de stock indumentaria para un emprendimiento</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Tomás García. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/danicanete" target="_blank">GitHub</a> ||
+                <a href="mailto:canetegaitandaniela@gmail.com">Email</a>
+            </div>
+        </div>
+        <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                includedLanguages: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+        function translatePage() {
+            var select = document.querySelector(".goog-te-combo");
+            if (select) {
+                select.value = 'en';
+                select.dispatchEvent(new Event('change'));
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <button onclick="toggleDarkMode()">Modo Oscuro</button>
+    <script>function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+        localStorage.setItem("darkMode", document.body.classList.contains("dark-mode") ? "enabled" : "disabled");
+    }
+    
+    function applyDarkMode() {
+        if (localStorage.getItem("darkMode") === "enabled") {
+            document.body.classList.add("dark-mode");
+        }
+    }
+    
+    document.addEventListener("DOMContentLoaded", applyDarkMode);
+    </script>
+    </footer>
+</body>
+</html>
